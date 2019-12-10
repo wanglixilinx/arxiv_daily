@@ -1,4 +1,3 @@
-# arxiv_daily
 # Tutorial for 4-bit FPN_ResNet18 for Semantic Segmentation on Cityscapes dataset
 
 ## Contents
@@ -42,14 +41,15 @@ pip install torch torchvision tqdm Pillow scipy
 - [4bit] (encoding/weight/q4/q6240.pth.tar)
 
 ### Demo 
-
-cd train_and_eval
+```bash
+cd train_and_eval 
 sh run_demo_quantize.sh
-
+```
 ### Evaluation on Cityscapes Validation
+```bash
 cd train_and_eval
 sh run_eval_quantize.sh
-
+```
 |Input size | A/W bit | mIoU(val) | FLOPs |
 |-----------|---------|-----|-------|
 |256 * 512  | float | 62.9% | 10G |
